@@ -6,7 +6,7 @@ This project is a minimal backend service for defining and executing configurabl
 
 ---
 
-## 🚀 Quick Start Instructions
+## Quick Start Instructions
 
 ### Prerequisites
 
@@ -21,7 +21,7 @@ dotnet run
 After running, open http://localhost:5085/swagger
 (Check your terminal for the actual port number.)
 
-📚 API Overview
+API Overview
 This API lets you:
 Define workflows as state machines (with states + actions).
 Start workflow instances from definitions.
@@ -38,7 +38,7 @@ Endpoint	Method	Purpose
 /instances	GET	List all running instances
 /instances/{instanceId}/actions/{actionId}	POST	Execute action (move instance)
 
-📝 Example Usage
+Example Usage
 1. Create Workflow Definition
 Use POST /workflows (in Swagger UI).
 body: json
@@ -51,12 +51,11 @@ Replace {instanceId} with the actual instance ID you received above.
 4. Inspect Instance State and History
 Use GET /instances/{instanceId}
 
-✅ Assignment Requirements Covered
+Assignment Requirements
 Define: Create workflows with states and actions.
 Start: Launch workflow instances from any definition.
 Move: Execute actions to move an instance between states, with validation.
 Inspect: List and retrieve states, actions, definitions, and running instances.
-
 Validation: Blocks duplicates, missing initial state, wrong transitions, disabled states/actions, final states.
 Persistence: Uses in-memory data store (no database, per assignment).
 Documentation: Includes quick-start, API docs, payload examples, and design assumptions.
