@@ -60,7 +60,7 @@ Validation: Blocks duplicates, missing initial state, wrong transitions, disable
 Persistence: Uses in-memory data store (no database, per assignment).
 Documentation: Includes quick-start, API docs, payload examples, and design assumptions.
 
-⚠️ Assumptions & Shortcuts
+Assumptions & Shortcuts
 All data is in-memory only (server restart resets everything).
 Each workflow definition must have exactly one initial state.
 All state and action IDs must be unique within a workflow.
